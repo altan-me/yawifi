@@ -1,0 +1,22 @@
+extends default
+
+block content
+  div.center
+    span
+        form#qrCodeForm(action="/wifi", method="post")
+            input#ssid.ssid(
+                type="text",
+                name="ssid",
+                placeholder="SSID",
+                required
+            )
+            input#pass.pass(
+                type="password",
+                name="password",
+                placeholder="Password",
+                required
+            )
+            input.submit(type="submit", value="Generate")
+    #qrcode.qrcode
+        img#qrCodeImg(src="", alt="")
+            

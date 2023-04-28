@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title #{title} | YAWIFI
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/water.css@2/out/water.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    style
+      include css/style.css
+  body
+    main
+      block header
+        header.header
+          h1 #{title}
+      block content
+  script 
+    include js/submit.js

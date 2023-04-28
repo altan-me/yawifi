@@ -1,0 +1,11 @@
+body {
+  max-width: fit-content;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.qrcode {
+  padding-top: 20px;
+  text-align: center;
+}
