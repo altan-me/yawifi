@@ -4,11 +4,9 @@ const displayResponse = function (response) {
 
 function logSubmit(event) {
   event.preventDefault();
-  //   populateUI("Checking URL..", " ", true, "127px");
   let ssid = document.getElementById("ssid").value;
   let pass = document.getElementById("pass").value;
   const data = { ssid: ssid, pass: pass };
-  console.log(data);
   fetch("/wifi", {
     headers: {
       Accept: "application/json",
@@ -19,8 +17,6 @@ function logSubmit(event) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      console.log(data.imgUrl);
       displayResponse(data);
     })
     .catch((error) => {

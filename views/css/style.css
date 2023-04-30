@@ -1,5 +1,6 @@
 body {
   max-width: fit-content;
+  font-family: "Roboto", sans-serif;
 }
 form {
   display: flex;
@@ -8,4 +9,26 @@ form {
 .qrcode {
   padding-top: 20px;
   text-align: center;
+}
+footer {
+  color: #e3f2fd;
+  position: fixed;
+  left: 0;
+  bottom: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+p {
+  margin: 0;
+  font-size: 0.7rem;
+}
+h2 {
+  text-transform: uppercase;
+}
+main {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 260px;
 }
